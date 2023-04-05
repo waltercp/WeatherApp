@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  
+
 
 
     background-position: absolute;
@@ -13,13 +13,13 @@
 
 }
 
-.componentLoading{
-    color: rgb(53, 47, 47);
-    font-size: 60px;
+.componentLoading {
+    color: rgb(234, 223, 223);
+    font-size: 20px;
     letter-spacing: 0.15em;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +28,7 @@
 }
 
 .content {
-    background-color: hsla(0, 1%, 50%, 0.80);
+    background-color: hsla(0, 1%, 50%, 0.85);
     display: flex;
     flex-direction: column;
     padding: 2rem 2rem 1rem;
@@ -37,7 +37,7 @@
     height: 500px;
 }
 
-button {
+.SeeLocation {
     padding: 1rem;
     border-radius: 0.7rem;
     width: 240px;
@@ -132,7 +132,7 @@ button {
 .contentListSon {
     text-align: center;
     font-size: 19px;
-    
+
 
 }
 
@@ -154,7 +154,7 @@ button {
     color: rgb(210, 247, 196);
 }
 
-.contentChange h1{
+.contentChange h1 {
     font-size: 32px;
 }
 
@@ -165,13 +165,59 @@ button {
     border: none;
     color: white;
     background-color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+@media (max-width: 350px) {
+    .container {
+        width: 280px;
+    }
+
+    .content {
+        padding: 1rem;
+        border-radius: 2rem;
+        min-width: 270px;
+        height: 450px;
+    }
+
+    .contentTitle {
+        font-size: 18px;
+    }
+   
+    .contentWeather img {
+        width: 140px;
+        height: 120px;
+    }
+
+    
+
+
+    #nameCity {
+        width: 170px;
+    }
+
+    .contentChange button{
+        width: 130px;
+        font-size: 15px;
+    }
+
+    .formCity button {
+        width: 80px;
+    }
+
+    .SeeLocation {
+        font-size: 14px;
+        width: 160px;
+    }
+
 }
 
 
 
-
 @media (min-width: 700px) {
-    .container{
+    .container {
         gap: 2rem;
     }
 
@@ -196,6 +242,8 @@ button {
         height: 50px;
     }
 
+
+
     .contentWeather {
         flex-direction: row;
 
@@ -211,7 +259,8 @@ button {
         gap: 2rem;
 
     }
-    .contentChange h1{
+
+    .contentChange h1 {
         font-size: 38px;
     }
 
@@ -224,6 +273,11 @@ button {
         width: 100px;
         text-align: left;
     }
+
+    .componentLoading {
+        font-size: 60px;
+    }
+
 
 
 

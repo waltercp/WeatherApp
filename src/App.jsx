@@ -76,9 +76,9 @@ function App() {
   }
 
   const appStyle = {
-      backgroundImage: weather? 
-                  `url('/imgWheather/${weather?.weather[0].icon}.jpg')`
-                  : ''
+      backgroundImage: weather
+                  ? `url('/imgWheather/${weather?.weather[0].icon}.jpg')`
+                  : `url('/imgWheather/01d.jpg')`
   }
  
   const weatherLatLon = () => setCityLatLon(true)
@@ -104,7 +104,7 @@ function App() {
 
             {cityLatLon
               ? ''
-              : <button onClick={weatherLatLon}> See According to my Location </button>
+              : <button className='SeeLocation' onClick={weatherLatLon}> See According to my Location </button>
             }
           </div>
         )
