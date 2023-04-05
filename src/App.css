@@ -1,0 +1,230 @@
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+
+
+    background-position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.componentLoading{
+    color: rgb(53, 47, 47);
+    font-size: 60px;
+    letter-spacing: 0.15em;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.content {
+    background-color: hsla(0, 1%, 50%, 0.80);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 1rem;
+    border-radius: 2rem;
+    min-width: 350px;
+    height: 500px;
+}
+
+button {
+    padding: 1rem;
+    border-radius: 0.7rem;
+    width: 240px;
+    border: none;
+    font-weight: bold;
+    background-color: hsla(0, 1%, 50%, 0.90);
+    color: white;
+    font-size: 20px;
+}
+
+/********************Form***********************************/
+.formCity {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nameCity {
+    width: 230px;
+    height: 35px;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+
+    border: none;
+    background-color: white;
+    padding: 1rem;
+    outline: none;
+
+}
+
+.formCity button {
+    background-color: rgb(40, 36, 36);
+    width: 100px;
+    height: 40px;
+    padding: 0.3rem;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    color: rgb(252, 247, 247);
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+
+
+/********************Encabezado *********************************/
+.contentTitle {
+    text-align: center;
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    color: rgb(210, 247, 196);
+}
+
+.contentTitle h1 {
+    color: rgb(246, 246, 246);
+}
+
+/***********************Cuerpo*******************************/
+.contentWeather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentWeather img {
+    width: 160px;
+    height: 140px;
+}
+
+.contentDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+}
+
+.contentDescription h3 {
+    text-align: center;
+    font-size: 24px;
+    color: white
+}
+
+.contentList {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    justify-content: space-between;
+    color: rgb(210, 247, 196);
+}
+
+.contentListSon {
+    text-align: center;
+    font-size: 19px;
+    
+
+}
+
+.contentListSon :nth-child(2) {
+    font-weight: bold;
+    color: white;
+}
+
+
+
+/*************************Pie*******************************/
+.contentChange {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 1rem;
+    color: rgb(210, 247, 196);
+}
+
+.contentChange h1{
+    font-size: 32px;
+}
+
+.contentChange button {
+    padding: 1rem;
+    width: 160px;
+    border-radius: 1rem;
+    border: none;
+    color: white;
+    background-color: black;
+}
+
+
+
+
+@media (min-width: 700px) {
+    .container{
+        gap: 2rem;
+    }
+
+    .container {
+        height: 480px;
+        width: 520px;
+    }
+
+    .content {
+        height: 500px;
+        justify-content: center;
+        gap: 2rem;
+        padding: 3rem 4rem 1rem;
+    }
+
+    #nameCity {
+        width: 400px;
+        height: 50px;
+    }
+
+    .formCity button {
+        height: 50px;
+    }
+
+    .contentWeather {
+        flex-direction: row;
+
+    }
+
+    .contentList {
+        flex-direction: column;
+    }
+
+
+    .contentListSon {
+        display: flex;
+        gap: 2rem;
+
+    }
+    .contentChange h1{
+        font-size: 38px;
+    }
+
+    .contentWeather img {
+        width: 200px;
+        height: 180px;
+    }
+
+    .contentListSon :nth-child(1) {
+        width: 100px;
+        text-align: left;
+    }
+
+
+
+}
