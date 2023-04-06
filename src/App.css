@@ -10,7 +10,7 @@
     background-position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 2rem;
+    
 
 }
 
@@ -26,6 +26,7 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    padding: 2rem 0rem 2rem;
 }
 
 .content {
@@ -50,14 +51,14 @@
 .SeeLocation {
     padding: 1rem;
     border-radius: 0.7rem;
-    width: 240px;
+    width: 210px;
     border: none;
     font-weight: bold;
-    background-color: hsla(0, 1%, 50%, 0.60);
-    box-shadow: 0.2em 0.2em 0 0 rgb(6, 0, 0), inset 0.1em 0.1em 0 0 rgb(235, 241, 232);
+    background-color: hsla(0, 1%, 50%, 0.40);
+    box-shadow: 0.1em 0.1em 0 0 rgb(240, 240, 240), inset 0.1em 0.1em 0 0 rgb(235, 241, 232);
     
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     transition: 0.45s;
 
@@ -269,13 +270,11 @@
 
 
 @media (min-width: 700px) {
+    
+   
     .container {
+        padding: 3rem 4rem 2rem;
         gap: 2rem;
-    }
-
-    .container {
-        height: 480px;
-        width: 520px;
     }
 
     .content {
