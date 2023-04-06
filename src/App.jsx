@@ -90,10 +90,8 @@ function App() {
     
     <div style={appStyle} className="App">
       {
-        location
-        ? <Permissions/>
-        
-        :(
+        latlom
+        ? (
           weather ? (
             <div className='container'>
               <form className='formCity' onSubmit={handleSubmit}>
@@ -118,6 +116,8 @@ function App() {
             :
             <Loading />
         )
+        
+        : <Permissions/>
       }
     </div>
   )
