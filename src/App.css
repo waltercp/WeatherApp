@@ -116,6 +116,7 @@
     flex-direction: column;
     gap: 0.4rem;
     color: rgb(210, 247, 196);
+    height: 100px;
 }
 
 .contentTitle h1 {
@@ -206,7 +207,7 @@
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 380px) {
     .container {
         width: 280px;
         margin-top: 1rem;
