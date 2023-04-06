@@ -2,7 +2,7 @@ import React from 'react'
 
 const ErrorFetch = () => {
   return (
-    <h1>❌❌Esta ciudad no existe❌❌</h1>
+    <h1 className='errorCity'>❌❌Esta ciudad no existe❌❌</h1>
   )
 }
 

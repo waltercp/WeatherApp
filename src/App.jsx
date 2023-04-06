@@ -55,7 +55,7 @@ function App() {
           setHasError(true)
           setTimeout(() => {
             setHasError(false)
-          }, 900)
+          }, 1500)
         })
     }
   }, //[inputValue])
@@ -94,6 +94,7 @@ function App() {
               <input id='nameCity' type="text" placeholder='Ingrese la Ciudad ' />
               <button onClick={weatherCity} >Buscar</button>
             </form>
+          
             {
               hasError
                 ? <ErrorFetch />
@@ -104,7 +105,7 @@ function App() {
 
             {cityLatLon
               ? ''
-              : <button className='SeeLocation' onClick={weatherLatLon}> See According to my Location </button>
+              : <button className='seeLocation' onClick={weatherLatLon}> See According to my Location </button>
             }
           </div>
         )

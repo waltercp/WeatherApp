@@ -48,7 +48,7 @@
 }
 
 
-.SeeLocation {
+.seeLocation {
     padding: 1rem;
     border-radius: 0.7rem;
     width: 210px;
@@ -64,9 +64,13 @@
 
    
 }
-.SeeLocation:hover{
+.seeLocation:hover{
     background-color: white;
     color: black;
+}
+
+.errorCity{
+    color: white;
 }
 
 /********************Form***********************************/
