@@ -188,7 +188,7 @@
     .contentTitle {
         font-size: 18px;
     }
-   
+
     .contentWeather img {
         width: 140px;
         height: 120px;
@@ -206,7 +206,12 @@
         font-size: 28px;
     }
 
-    .contentChange button{
+    .contentListSon {
+        font-size: 17px;
+        
+    }
+
+    .contentChange button {
         width: 130px;
         font-size: 15px;
     }
