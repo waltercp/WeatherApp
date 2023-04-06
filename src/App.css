@@ -49,6 +49,27 @@
     background-color: hsla(0, 1%, 50%, 0.75);
 }
 
+/*************Permisos de Localizacion************************/
+
+.permisssionsLocation{
+    background-color: hsla(0, 1%, 50%, 0.80);
+    padding: 4.5rem;
+    width: 380px;
+    color: white;
+    border-radius: 3rem;
+    text-align: center;
+    font-size: 12px;
+    box-shadow: 0.1em 0.1em 0 0 rgb(240, 240, 240), inset 0.1em 0.1em 0 0 rgb(235, 241, 232);
+    line-height: 43px;
+}
+
+.permisssionsLocation h1 span{
+    color: rgb(9, 230, 31);
+    font-size: 25px;
+}
+
+
+
 
 /*************boton para regresar a Lat y Lon ********************/
 .seeLocation {
@@ -220,6 +241,17 @@
         min-height: 450px;
     }
 
+    .permisssionsLocation{
+        font-size: 9px;
+        width: 259px;
+        padding: 2.5rem;
+        line-height: 37px;
+    }
+    .permisssionsLocation h1 span{
+        color: rgb(9, 230, 31);
+        font-size: 19px;
+    }
+
     .SeeLocation {
         font-size: 14px;
         width: 160px;
@@ -289,6 +321,17 @@
         justify-content: center;
         gap: 2rem;
         padding: 3rem 4rem 1rem;
+    }
+
+    .permisssionsLocation{
+        font-size: 18px;
+        width: 500px;
+        padding: 5rem;
+        line-height: 50px;
+    }
+    .permisssionsLocation h1 span{
+        font-size: 36px;
+        width: 500px;
     }
 
     #nameCity {

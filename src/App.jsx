@@ -4,6 +4,7 @@ import axios from 'axios'
 import WeatherCard from './components/WeatherCard'
 import Loading from './components/Loading'
 import ErrorFetch from './components/ErrorFetch'
+import Permissions from './components/Permissions'
 
 
 
@@ -86,34 +87,38 @@ function App() {
 
 
   return (
+    
     <div style={appStyle} className="App">
       {
-        weather ? (
-          <div className='container'>
-            <form className='formCity' onSubmit={handleSubmit}>
-              <input id='nameCity' type="text" placeholder='Ingrese la Ciudad ' />
-              <button onClick={weatherCity} >Buscar</button>
-            </form>
-          
-            {
-              hasError
-                ? <ErrorFetch />
-                : <WeatherCard
-                  weather={weather}
-                  temperature={temperature} />
-            }
-
-            {cityLatLon
-              ? ''
-              : <button className='seeLocation' onClick={weatherLatLon}> See According to my Location </button>
-            }
-          </div>
+        location
+        ? <Permissions/>
+        
+        :(
+          weather ? (
+            <div className='container'>
+              <form className='formCity' onSubmit={handleSubmit}>
+                <input id='nameCity' type="text" placeholder='Ingrese la Ciudad ' />
+                <button onClick={weatherCity} >Buscar</button>
+              </form>
+            
+              {
+                hasError
+                  ? <ErrorFetch />
+                  : <WeatherCard
+                    weather={weather}
+                    temperature={temperature} />
+              }
+  
+              {cityLatLon
+                ? ''
+                : <button className='seeLocation' onClick={weatherLatLon}> See According to my Location </button>
+              }
+            </div>
+          )
+            :
+            <Loading />
         )
-          :
-          <Loading />
       }
-
-
     </div>
   )
 }
