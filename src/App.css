@@ -33,7 +33,7 @@
     background-color: hsla(0, 1%, 50%, 0.50);
     display: flex;
     flex-direction: column;
-    padding: 2rem 2rem 1rem;
+    padding: 2rem 0.95rem 1rem;
     border-radius: 2rem;
     min-width: 350px;
     height: 500px;
@@ -149,13 +149,12 @@
     gap: 0.8rem;
     justify-content: space-between;
     color: rgb(210, 247, 196);
+
 }
 
 .contentListSon {
     text-align: center;
-    font-size: 19px;
-
-
+    font-size: 18px;
 }
 
 .contentListSon :nth-child(2) {
@@ -203,18 +202,19 @@
 
 
 
-@media (max-width: 350px) {
+@media (max-width: 400px) {
     .container {
         width: 280px;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 0;
     }
 
     .content {
         padding: 1rem;
         border-radius: 2rem;
         min-width: 270px;
-        height: 450px;
+        min-height: 450px;
     }
 
     .contentTitle {
@@ -231,20 +231,23 @@
     }
 
     .contentDescription h3 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .contentChange h1 {
         font-size: 28px;
     }
 
+    .contentList{
+        gap: 0.5px;
+    }
     .contentListSon {
-        font-size: 17px;
-        
+        font-size: 16px;
     }
-    .contentList {
-        gap: 0.5rem;
+    .contentListSon p {
+       width: 83px;
     }
+   
 
     .contentChange button {
         width: 130px;
@@ -308,6 +311,7 @@
     .contentListSon {
         display: flex;
         gap: 2rem;
+        width: 100%;
 
     }
 
