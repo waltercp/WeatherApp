@@ -5,19 +5,21 @@
     align-items: center;
     justify-content: center;
 
-
-
     background-position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
-    
-
 }
+
 
 .componentLoading {
     color: rgb(234, 223, 223);
     font-size: 20px;
     letter-spacing: 0.15em;
+}
+
+.errorCity{
+    color: white;
+    font-size: 20px;
 }
 
 .container {
@@ -41,13 +43,14 @@
     box-shadow: 0.1rem 0.1rem 15px rgb(246, 243, 243);
     cursor: pointer;
     transition: 0.35s;
-
 }
+
 .content:hover{
     background-color: hsla(0, 1%, 50%, 0.75);
 }
 
 
+/*************boton para regresar a Lat y Lon ********************/
 .seeLocation {
     padding: 1rem;
     border-radius: 0.7rem;
@@ -67,10 +70,6 @@
 .seeLocation:hover{
     background-color: white;
     color: black;
-}
-
-.errorCity{
-    color: white;
 }
 
 /********************Form***********************************/
@@ -169,7 +168,7 @@
 
 
 
-/*************************Pie*******************************/
+/*************************Footer*******************************/
 .contentChange {
     display: flex;
     flex-direction: column;
@@ -178,7 +177,6 @@
     margin-top: auto;
     margin-bottom: 1rem;
     color: rgb(210, 247, 196);
-    
 }
 
 .contentChange h1 {
@@ -198,6 +196,7 @@
     transition: 10;
     box-shadow: 0.1rem 0.1rem 15px rgb(246, 243, 243);
 }
+
 .contentChange button:active{
     font-size: 17px;
     background-color: rgb(241, 241, 241, 20%);
@@ -205,9 +204,8 @@
 
 
 
-
-
 @media (max-width: 380px) {
+
     .container {
         width: 280px;
         margin-top: 1rem;
@@ -222,6 +220,19 @@
         min-height: 450px;
     }
 
+    .SeeLocation {
+        font-size: 14px;
+        width: 160px;
+    }
+
+    .errorCity{
+        font-size: 15px
+    }
+
+    #nameCity {
+        width: 170px;
+    }
+
     .contentTitle {
         font-size: 18px;
     }
@@ -229,10 +240,6 @@
     .contentWeather img {
         width: 140px;
         height: 120px;
-    }
-
-    #nameCity {
-        width: 170px;
     }
 
     .contentDescription h3 {
@@ -253,7 +260,6 @@
        width: 83px;
     }
    
-
     .contentChange button {
         width: 130px;
         font-size: 15px;
@@ -263,14 +269,8 @@
         background-color: rgb(241, 241, 241, 20%);
     }
 
-
     .formCity button {
         width: 80px;
-    }
-
-    .SeeLocation {
-        font-size: 14px;
-        width: 160px;
     }
 
 }
@@ -279,7 +279,6 @@
 
 @media (min-width: 700px) {
     
-   
     .container {
         padding: 3rem 4rem 2rem;
         gap: 2rem;
@@ -301,8 +300,6 @@
         height: 50px;
     }
 
-
-
     .contentWeather {
         flex-direction: row;
 
@@ -312,12 +309,10 @@
         flex-direction: column;
     }
 
-
     .contentListSon {
         display: flex;
         gap: 2rem;
         width: 100%;
-
     }
 
     .contentChange h1 {
@@ -338,6 +333,7 @@
         font-size: 60px;
     }
 
-
-
+    .errorCity{
+        font-size: 48px;
+    }
 }
