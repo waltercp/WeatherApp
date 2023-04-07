@@ -12,13 +12,13 @@
 
 
 .componentLoading {
-    color: rgb(234, 223, 223);
+    color: rgb(232, 221, 221);
     font-size: 20px;
     letter-spacing: 0.15em;
 }
 
 .errorCity{
-    color: white;
+    color: rgb(133, 105, 105);
     font-size: 20px;
 }
 
@@ -105,11 +105,12 @@
     width: 230px;
     height: 35px;
     border-radius: 0.5rem 0rem 0rem 0.5rem;
-
+    color: hsla(0, 1%, 50%, 0.90);;
     border: none;
     background-color: white;
     padding: 1rem;
     outline: none;
+
 
 }
 
@@ -373,7 +374,7 @@
     }
 
     .componentLoading {
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .errorCity{

@@ -17,7 +17,8 @@ function App() {
   const [cityLatLon, setCityLatLon] = useState(true)
   const [hasError, setHasError] = useState(false)
 
-
+  const [confirmLocation, setConfirmLocation] = useState(true)
+  
 
   useEffect(() => {
     const success = pos => {
@@ -26,9 +27,17 @@ function App() {
         lon: pos.coords.longitude
       }
       setLatlom(obj)
+      setConfirmLocation(true)
     }
-    navigator.geolocation.getCurrentPosition(success)
+
+    const error = err => {
+      setConfirmLocation(false)
+    }
+    navigator.geolocation.getCurrentPosition(success, error)
+
   }, [])
+
+
 
 
 
@@ -86,11 +95,12 @@ function App() {
   const weatherCity = () => setCityLatLon(false)
 
 
+
+
   return (
-    
     <div style={appStyle} className="App">
       {
-        latlom
+        confirmLocation
         ? (
           weather ? (
             <div className='container'>
@@ -116,7 +126,6 @@ function App() {
             :
             <Loading />
         )
-        
         : <Permissions/>
       }
     </div>
