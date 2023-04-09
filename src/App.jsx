@@ -65,7 +65,7 @@ function App() {
           setHasError(true)
           setTimeout(() => {
             setHasError(false)
-          }, 1500)
+          }, 1800)
         })
     }
   }, //[inputValue])
@@ -104,6 +104,8 @@ function App() {
         ? (
           weather ? (
             <div className='container'>
+
+              
               <form className='formCity' onSubmit={handleSubmit}>
                 <input id='nameCity' type="text" placeholder='Ingrese la Ciudad ' />
                 <button onClick={weatherCity} >Buscar</button>
@@ -111,10 +113,10 @@ function App() {
             
               {
                 hasError
-                  ? <ErrorFetch />
-                  : <WeatherCard
-                    weather={weather}
-                    temperature={temperature} />
+                  ? <WeatherCard
+                  weather={weather}
+                  temperature={temperature} />
+                  : <ErrorFetch />
               }
   
               {cityLatLon

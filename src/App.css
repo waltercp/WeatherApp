@@ -18,8 +18,11 @@
 }
 
 .errorCity{
-    color: rgb(133, 105, 105);
+    color: rgb(249, 245, 245);
     font-size: 20px;
+    background-color: rgb(32, 30, 30, 0.8);
+    border-radius: 1rem;
+    padding: 1rem 1rem;
 }
 
 .container {
@@ -78,7 +81,7 @@
     width: 210px;
     border: none;
     font-weight: bold;
-    background-color: hsla(0, 1%, 50%, 0.40);
+    background-color: hsla(0, 1%, 50%, 0.90);
     box-shadow: 0.1em 0.1em 0 0 rgb(240, 240, 240), inset 0.1em 0.1em 0 0 rgb(235, 241, 232);
     
     color: white;
@@ -378,6 +381,6 @@
     }
 
     .errorCity{
-        font-size: 48px;
+        font-size: 36px;
     }
 }
