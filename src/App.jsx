@@ -18,7 +18,7 @@ function App() {
   const [hasError, setHasError] = useState(false)
 
   const [confirmLocation, setConfirmLocation] = useState(true)
-  
+
 
   useEffect(() => {
     const success = pos => {
@@ -86,11 +86,11 @@ function App() {
   }
 
   const appStyle = {
-      backgroundImage: weather
-                  ? `url('/imgWheather/${weather?.weather[0].icon}.jpg')`
-                  : `url('/imgWheather/01d.jpg')`
+    backgroundImage: weather
+      ? `url('/imgWheather/${weather?.weather[0].icon}.jpg')`
+      : `url('/imgWheather/01d.jpg')`
   }
- 
+
   const weatherLatLon = () => setCityLatLon(true)
   const weatherCity = () => setCityLatLon(false)
 
@@ -101,34 +101,34 @@ function App() {
     <div style={appStyle} className="App">
       {
         confirmLocation
-        ? (
-          weather ? (
-            <div className='container'>
+          ? (
+            weather ? (
+              <div className='container'>
 
-              
-              <form className='formCity' onSubmit={handleSubmit}>
-                <input id='nameCity' type="text" placeholder='Ingrese la Ciudad ' />
-                <button onClick={weatherCity} >Buscar</button>
-              </form>
-            
-              {
-                hasError
-                  ? <WeatherCard
-                  weather={weather}
-                  temperature={temperature} />
-                  : <ErrorFetch />
-              }
-  
-              {cityLatLon
-                ? ''
-                : <button className='seeLocation' onClick={weatherLatLon}> See According to my Location </button>
-              }
-            </div>
+
+                <form className='formCity' onSubmit={handleSubmit}>
+                  <input id='nameCity' type="text" placeholder='Ingrese la Ciudad ' />
+                  <button onClick={weatherCity} >Buscar</button>
+                </form>
+
+                {
+                  hasError
+                    ? <ErrorFetch />
+                    : <WeatherCard
+                      weather={weather}
+                      temperature={temperature} />
+                }
+
+                {cityLatLon
+                  ? ''
+                  : <button className='seeLocation' onClick={weatherLatLon}> See According to my Location </button>
+                }
+              </div>
+            )
+              :
+              <Loading />
           )
-            :
-            <Loading />
-        )
-        : <Permissions/>
+          : <Permissions />
       }
     </div>
   )
